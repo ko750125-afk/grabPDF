@@ -1,0 +1,16 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+ENV/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Web (already handled in web/.gitignore but good to have)
+web/.next/
+web/node_modules/
+web/.env*
