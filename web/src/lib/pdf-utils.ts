@@ -56,7 +56,7 @@ export async function mergePdfs(files: File[]): Promise<Uint8Array> {
 }
 
 export function downloadBlob(data: Uint8Array, fileName: string) {
-  const blob = new Blob([data], { type: 'application/pdf' });
+  const blob = new Blob([data as any], { type: 'application/pdf' });
   const url = URL.createObjectURL(blob);
   const link = document.createElement('a');
   link.href = url;
